@@ -1,2 +1,2 @@
 #!/bin/bash\n
-I'm now a ALX Student, this is my first repository as a full-stack engineer\n
+Write a script that prints the absolute path name of the current working directory\n
