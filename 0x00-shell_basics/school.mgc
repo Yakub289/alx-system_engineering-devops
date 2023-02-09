@@ -1,2 +1,3 @@
 #!/bin/bash
-O string SCHOOL School data !:mine School
+O string SCHOOL School data
+!:mine School
