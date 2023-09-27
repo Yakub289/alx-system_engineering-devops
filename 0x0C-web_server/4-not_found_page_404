@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # A Bash script that configures  new Ubuntu machine to respect the requirements:
 # Configure a new Nginx server so that /redirect_me is redirecting to another page.
 # This scripts also configures the default webpage served to be "Hello World!"
