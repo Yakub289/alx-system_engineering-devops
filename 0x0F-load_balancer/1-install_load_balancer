@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
 # Install and configure HAproxy on your lb-01 server that sends traffic to web1 and web2
 
 echo -e "Updating and doing some minor checks...\n"
@@ -32,13 +32,13 @@ defaults
   timeout connect 10s
   timeout server 15s
   timeout http-request 10s
-frontend clickviral-tech-frontend
+frontend groupservices.tech
     bind *:80
-    default_backend clickviral-tech-backend
-backend clickviral-tech-backend
+    default_backend
+backend groupservices.tech
     balance roundrobin
-    server 151666-web-01 54.237.98.247 check
-    server 151666-web-02 100.25.181.32.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80.80 check
+    server 305470-web-01 54.237.98.247:80 check
+    server 305470-web-02 100.25.181.32:80 check
 "
 
 # shellcheck disable=SC2154
