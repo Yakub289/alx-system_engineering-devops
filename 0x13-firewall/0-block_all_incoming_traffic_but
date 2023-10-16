@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
 # Configures a ufw through web-01 so that its firewall redirects port 8080/TCP to port 80/TCP
 
-apt-get install ufw
-sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
-ufw disable
-ufw enable
-ufw default deny incoming
-ufw default allow outgoing
-ufw allow 22/tcp
-ufw allow 443/tcp
-ufw allow 80/tcp
+sudo ufw default deny incoming
+sudo ufw allow ssh/tcp
+sudo ufw allow 80/tcp
+sudp ufw allow 443/tcp
+sudo ufw enable
