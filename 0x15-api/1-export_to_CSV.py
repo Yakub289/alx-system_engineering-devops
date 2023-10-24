@@ -5,8 +5,8 @@ Records all tasks that are owned by this employee"""
 
 
 import csv
-import sys
 import requests
+import sys
 
 if __name__ == "__main__":
     user_id = sys.argv[1]
