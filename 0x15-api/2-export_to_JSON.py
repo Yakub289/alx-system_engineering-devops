@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 """A Python script to export data in the JSON format.
 Records all tasks that are owned by this employee"""

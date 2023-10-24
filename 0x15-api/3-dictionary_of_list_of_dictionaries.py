@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 """A  Python script to export data in the JSON format.
 Records all tasks from all employees f.todo_all_employees.json"""
