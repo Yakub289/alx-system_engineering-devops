@@ -1,4 +1,1 @@
-# Application server
-
-- DevOps
-- SysAdmin
+0x1A. Application server
