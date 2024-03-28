@@ -7,10 +7,12 @@ for a given subreddit.If an invalid subreddit is given,
 the function should return 0."""
 
 
+import requests
+
+
 def number_of_subscribers(subreddit):
     """Queries the Reddit API and returns the number of subscribers
     to the subreddit required to command the process"""
-    import requests
 
     sub_info = requests.get("https://www.reddit.com/r/{}/about.json"
                             .format(subreddit),
