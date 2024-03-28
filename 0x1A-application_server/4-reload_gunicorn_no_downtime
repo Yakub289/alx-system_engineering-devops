@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# command and Gunicorn to reload successfully
+
+pkill -HUP "$(pgrep gunicorn)"
