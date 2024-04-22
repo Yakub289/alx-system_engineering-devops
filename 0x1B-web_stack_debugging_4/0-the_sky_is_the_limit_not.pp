@@ -1,6 +1,16 @@
 # Simulate HTTP requests to a web server to minimalize failure.
 
-{'modify max open files limit setting':
-  command => 'sed -i "s/15/10000/" /etc/default/nginx && sudo service nginx restart',
-  path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games',
+exec { 'fix--for--nginx':
+  # Modify the ULIMIT value
+  command => '/bin/sed -i "s/15/4096/" /etc/default/nginx',
+  # Specify the path for sed command
+  path    => '/etc/usr/local/bin/:/bin/',
+}
+
+# Restart Nginx
+exec { 'nginx-restart':
+  # Restart Nginx service
+  command => '/etc/init.d/nginx restart',
+  # Specify the path for init.d scrpt
+  path    => '/etc/init.d/',
 }
