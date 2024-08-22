@@ -48,7 +48,7 @@ server {
  	# Add index.php to the list if you are using PHP
 	index index.html index.htm index.nginx-debian.html;
 
-	server_name web-01.donp.tech;
+	server_name web-01.groupservices.tech;
 	try_files $uri $uri/ =404;
 
 	location / {
@@ -68,7 +68,7 @@ server {
 	}
 
 	location = /redirect_me {
-		return 301 $scheme://youtube.com/@donphilip85;
+		return 301 $scheme://youtube.com/@suleimanayorindeyakub917;
 	}
 
 	location = /airbnb-onepage {
